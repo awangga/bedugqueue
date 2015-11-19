@@ -17,6 +17,7 @@ print "Disk Usage : ",psutil.disk_usage('/').percent
 #open file and insert field name
 logfile = open(filename,"w")
 logfile.write(
+"time"+bts+
 "cpu_percent"+bts+
 "cpu_times user"+bts+"cpu_times nice"+bts+"cpu_times system"+bts+"cpu_times idle"+bts+"cpu_times iowait "+bts+"cpu_times irq"+bts+"cpu_times softirq"+bts+"cpu_times steal"+bts+"cpu_times guest"+bts+"cpu_times guest_nice"+bts+
 "cpu_times user (%)"+bts+"cpu_times nice (%)"+bts+"cpu_times system (%)"+bts+"cpu_times idle (%)"+bts+"cpu_times iowait (%)"+bts+"cpu_times irq (%)"+bts+"cpu_times softirq (%)"+bts+"cpu_times steal (%)"+bts+"cpu_times guest (%)"+bts+"cpu_times guest_nice (%)"+bts+
