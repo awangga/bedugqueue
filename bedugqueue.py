@@ -11,7 +11,7 @@ filename="result.csv"
 #end config
 #start profiling
 print "Core CPU : ",psutil.cpu_count()
-print "Disk Usage : ",psutil.disk_usage('/').percent
+print "Disk Usage : ",psutil.disk_usage('/').percent, " %"
 #end profiling
 
 #open file and insert field name
@@ -28,12 +28,13 @@ logfile.write(
 "Rx"+bts+
 "\n"
 )
-print "starting..."
+print "Running... press ctrl+c to stop"
 #start iteration
 while True:
 	try:
 		tx0,rx0,t0= psutil.net_io_counters().bytes_sent,psutil.net_io_counters().bytes_recv,time.time()
-		print '{time execute}\r',
+		#print t0
+		print 'running \r',
 		print t0,
 		time.sleep(1)
 		logfile.write(
