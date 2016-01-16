@@ -27,6 +27,7 @@ on Debian 8
 # pip install psutil
 ```
 Make sure no error, we can test using python CLI
+
 ![](static/psutil_test.png)
 
 ## Reference
