@@ -1,21 +1,21 @@
 #!/bin/sh
-echo "20 req conncurrent 10"
-ab -n1 -c1 http://perlengkapan.jabar2016.com/test_login.php
-echo "200 req conncurrent 100"
+echo "1 req conncurrent 1"
+ab -n1 -c1 "http://192.168.1.3:8080/s.py?rcpt=089610707901&msg=haikenomordariab"
+echo "100 req conncurrent 10"
 sleep 10
-ab -n100 -c10 http://perlengkapan.jabar2016.com/test_login.php
-echo "500 req conncurrent 250"
+ab -n100 -c10 "http://192.168.1.3:8080/s.py?rcpt=089610707901&msg=haikenomordariab"
+echo "100 req conncurrent 50"
 sleep 10
-ab -n100 -c50 http://perlengkapan.jabar2016.com/test_login.php
+ab -n100 -c50 "http://192.168.1.3:8080/s.py?rcpt=089610707901&msg=haikenomordariab"
+echo "500 req conncurrent 200"
+sleep 10
+ab -n500 -c200 "http://192.168.1.3:8080/s.py?rcpt=089610707901&msg=haikenomordariab"
+echo "700 req conncurrent 300"
+sleep 10
+ab -n700 -c300 "http://192.168.1.3:8080/s.py?rcpt=089610707901&msg=haikenomordariab"
 echo "1000 req conncurrent 500"
 sleep 10
-ab -n500 -c200 http://perlengkapan.jabar2016.com/test_login.php
-echo "2000 req conncurrent 1000"
-sleep 10
-ab -n700 -c300 http://perlengkapan.jabar2016.com/test_login.php
+ab -n1000 -c500 "http://192.168.1.3:8080/s.py?rcpt=089610707901&msg=haikenomordariab"
 echo "10000 req conncurrent 5000"
 sleep 10
-ab -n1000 -c500 http://perlengkapan.jabar2016.com/test_login.php
-
-ab -n10000 -c5000 http://perlengkapan.jabar2016.com/test_login.php
-#This will shoot off 2000 requests at the server, with a concurrency level of 10 (10 threads performing requests in parallel).
+ab -n10000 -c5000 "http://192.168.1.3:8080/s.py?rcpt=089610707901&msg=haikenomordariab"
