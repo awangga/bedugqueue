@@ -24,8 +24,8 @@ logfile.write(
 "virtual_memory total"+bts+"virtual_memory available"+bts+"virtual_memory (%)"+bts+"virtual_memory used"+bts+"virtual_memory free"+bts+"virtual_memory active"+bts+"virtual_memory inactive"+bts+"virtual_memory buffers"+bts+"virtual_memory cached"+bts+
 "swap_memory total"+bts+"swap_memory used"+bts+"swap_memory free"+bts+"swap_memory (%)"+bts+"swap_memory sin"+bts+"swap_memory sout"+bts+
 "bytes_sent"+bts+"bytes_recv"+bts+"packets_sent"+bts+"packets_recv"+bts+"errin"+bts+"errout"+bts+"dropin"+bts+"dropout"+bts+
-"Tx"+bts+
-"Rx"+bts+
+"Tx Bps"+bts+
+"Rx Bps"+bts+
 "\n"
 )
 print "Running... press ctrl+c to stop"
