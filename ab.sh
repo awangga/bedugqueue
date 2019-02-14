@@ -33,3 +33,13 @@ echo "1000 req conncurrent 100"
 echo "--------------------------"
 sleep 10
 ab -n1000 -c100 "http://spacemap.lapan.go.id/spacemap-aceh/"
+echo "--------------------------"
+echo "1000 req conncurrent 200"
+echo "--------------------------"
+sleep 10
+ab -n1000 -c200 "http://spacemap.lapan.go.id/spacemap-aceh/"
+echo "--------------------------"
+echo "1000 req conncurrent 500"
+echo "--------------------------"
+sleep 10
+ab -n1000 -c500 "http://spacemap.lapan.go.id/spacemap-aceh/"
